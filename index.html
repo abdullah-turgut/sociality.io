@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a0ca501cc8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Sociality.io</title>
+  </head>
+  <body>
+    <!-- Side Nav -->
+    <nav class="nav-bar">
+      <i class="fa-solid fa-bars"></i>
+      <div class="side-nav">
+        <a class="brand-logo" href="#"><strong>sociality</strong>.io</a>
+        <a class="brand-name" href="#" id="brand1">
+          <i class="fa-brands fa-slack"></i>
+          <p>brand 1</p>
+        </a>
+        <a class="brand-name" href="#" id="brand2">
+          <i class="fa-brands fa-kickstarter"></i>
+          <p>brand 2</p>
+        </a>
+        <a class="brand-name" href="#" id="brand3">
+          <i class="fa-brands fa-teamspeak"></i>
+          <p>brand 3</p>
+        </a>
+      </div>
+      <!-- Offcanvas -->
+      <div class="offcanvas">
+        <div class="accordion-menu">
+          <div class="notification">
+            <i class="fa-regular fa-bell"></i> NOTIFICATIONS
+            <span class="badge" id="notification-badge"></span>
+          </div>
+          <button class="accordion">
+            <i class="fa-solid fa-list-check"></i> SUMMARY
+          </button>
+          <div class="panel"></div>
+
+          <button class="accordion">
+            <i class="fa-regular fa-pen-to-square"></i> PUBLISH
+          </button>
+          <div class="panel">
+            <div>
+              <ul>
+                <li class="accordion-item"><a href="#">Compose</a></li>
+                <li class="accordion-item"><a href="#" id="feed">Feed</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="accordion">
+            <i class="fa-regular fa-comments"></i> ENGAGE
+          </button>
+          <div class="panel"></div>
+          <button class="accordion">
+            <i class="fa-solid fa-headphones-simple"></i> LISTEN
+          </button>
+          <div class="panel"></div>
+          <button class="accordion">
+            <i class="fa-solid fa-chart-line"></i> REPORT
+          </button>
+          <div class="panel"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- Status Codes -->
+      <div class="status-codes">
+        <ul class="status-code-list">
+          <li>
+            <span class="code-list-dot" id="published-code">&#11044</span>
+            <span class="code-name">Published</span>
+          </li>
+          <li>
+            <span class="code-list-dot" id="scheduled-code">&#11044</span>
+            <span class="code-name">Scheduled</span>
+          </li>
+          <li>
+            <span class="code-list-dot" id="need-code">&#11044</span>
+            <span class="code-name">Need Approval</span>
+          </li>
+          <li>
+            <span class="code-list-dot" id="error-code">&#11044</span>
+            <span class="code-name">Error</span>
+          </li>
+          <li>
+            <span class="code-list-dot" id="notes-code">&#11044</span>
+            <span class="code-name">Publishing</span>
+          </li>
+        </ul>
+      </div>
+      <!-- Post Content -->
+      <div class="posts-by-date">
+        <p class="welcome">WELCOME! <span>This is applicant project for Sociality.io.</span> <span>Data will be displayed, if you go through brands > Publish > Feed on side-navigation</span></p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
